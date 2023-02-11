@@ -1,0 +1,7 @@
+<!-- protoc -Igreet/proto --go_out=. --go_opt=module=github.com/ashishdock/grpc-go-practice --go-grpc_out=. --go-grpc_opt=module=github.com/ashishdock/grpc-go-practice greet/proto/dummy.proto -->
+
+<!-- you can still build the .proto files by hand by running the following commands:
+
+    protoc -I${PROJECT}/proto --go_opt=module=${YOUR_MODULE} --go_out=. ${PROJECT}/proto/*.proto
+
+where ${YOUR_MODULE} is the name of your go module (you can find that in your go.mod file) and ${PROJECT} is one of the projects name (greet, calculator, blog). -->
